@@ -1,0 +1,11 @@
+name: 01b ejercicio hola mundo
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola mundo
+        run: echo "Hola, Ricardo Sauceda!"
